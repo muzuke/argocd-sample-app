@@ -5,7 +5,7 @@ metadata:
 spec:
   source:
     repoURL: https://charts.bitnami.com/bitnami
-    chart: bitnami/tomcat
+    chart: tomcat
     targetRevision: 10.1.6
     helm:
       values: |
