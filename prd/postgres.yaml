@@ -1,7 +1,7 @@
 kind: Application
 apiVersion: argoproj.io/v1alpha1
 metadata:
-  name: postgres
+  name: postgres-prd
 spec:
   source:
     repoURL: https://charts.bitnami.com/bitnami

@@ -1,10 +1,8 @@
 kind: Application
 apiVersion: argoproj.io/v1alpha1
 metadata:
-  name: tomcat
+  name: tomcat-dev
 spec:
-  destination:
-    namespace: tomcat-dev
   source:
     repoURL: https://charts.bitnami.com/bitnami
     chart: bitnami/tomcat
