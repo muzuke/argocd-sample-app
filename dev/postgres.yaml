@@ -4,7 +4,7 @@ metadata:
   name: postgres-dev
 spec:
   source:
-    repoURL: https://charts.bitnami.com
+    repoURL: https://charts.bitnami.com/bitnami
     chart: postgresql
     targetRevision: 10.13.9
     helm:
