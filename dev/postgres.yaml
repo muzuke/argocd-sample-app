@@ -8,7 +8,7 @@ spec:
     chart: bitnami/postgresql
     targetRevision: 10.13.9
     helm:
-      values:
+      values: |
         postgresqlUsername: admin
         postgresqlPassword: secret
         postgresqlDatabase: postgres
