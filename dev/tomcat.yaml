@@ -11,3 +11,5 @@ spec:
       values: |
         tomcatUsername: manager 
         tomcatPassword: password
+        persistence:
+          enabled: false
