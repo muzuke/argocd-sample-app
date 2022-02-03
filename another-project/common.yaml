@@ -1,0 +1,17 @@
+kind: Application
+apiVersion: argoproj.io/v1alpha1
+metadata:
+  name: sample-app
+spec:
+  project: my-app
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: my-app
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    retry:
+      limit: 1
+    syncOptions:
+      - CreateNamespace=true
