@@ -1,0 +1,15 @@
+kind: Application
+apiVersion: argoproj.io/v1alpha1
+metadata:
+  name: tomcat
+spec:
+  destination:
+    namespace: tomcat-prd
+  source:
+    repoURL: https://charts.bitnami.com/bitnami
+    chart: bitnami/tomcat
+    targetRevision: 10.1.6
+    helm:
+      values:
+        tomcatUsername: manager 
+        tomcatPassword: password

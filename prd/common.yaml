@@ -1,0 +1,15 @@
+kind: Application
+apiVersion: argoproj.io/v1alpha1
+metadata:
+  name: default-app
+spec:
+  project: default
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: demo-app-prd
+  # For the production environment we don't have automatic sync.
+  syncPolicy:
+    retry:
+      limit: 1
+    syncOptions:
+      - CreateNamespace=true

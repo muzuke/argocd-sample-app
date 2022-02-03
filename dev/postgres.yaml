@@ -1,0 +1,16 @@
+kind: Application
+apiVersion: argoproj.io/v1alpha1
+metadata:
+  name: postgres
+spec:
+  source:
+    repoURL: https://charts.bitnami.com/bitnami
+    chart: bitnami/postgresql
+    targetRevision: 10.13.9
+    helm:
+      values:
+        postgresqlUsername: admin
+        postgresqlPassword: secret
+        postgresqlDatabase: postgres
+        persistence:
+          enabled: false
