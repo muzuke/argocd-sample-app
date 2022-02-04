@@ -13,4 +13,4 @@ spec:
         postgresqlPassword: secret
         postgresqlDatabase: postgres
         persistence:
-          enabled: false
+          enabled: true
